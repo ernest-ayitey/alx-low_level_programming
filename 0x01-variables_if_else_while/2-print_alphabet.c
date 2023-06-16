@@ -8,7 +8,7 @@
  *
  *Return: Always 0 (indicating success)
  */
-int main()
+int main(0)
 {
 	char c;
 	/* your code goes there */
