@@ -10,12 +10,13 @@
 int main(void)
 {
 	int i;
+	
 	for (i = 0; i < 16; i++)
 	{
 		if (i < 10)
 		{
 			putchar(i + '0');  /* Print digits 0-9 */
-	       	} else 
+		} else
 		{
 			putchar(i - 10 + 'a');  /* Print lowercase letters a-f */
 		}
