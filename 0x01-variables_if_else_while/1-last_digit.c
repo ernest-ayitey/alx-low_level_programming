@@ -2,6 +2,7 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
+/* betty style doc for function main goes there*/
 /**
  *program generates a random number and prints the last digit of that number.
  *provides additional information about the last digit based on a conditions.
