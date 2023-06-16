@@ -8,7 +8,7 @@ void printCombination(int a, int b, int c)
 	putchar(',');
 	putchar(' ');
 }
-int main(void)
+int main()
 {
 	int i, j, k;
 
