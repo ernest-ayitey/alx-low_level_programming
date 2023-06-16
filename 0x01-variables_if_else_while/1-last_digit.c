@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * This program generates a random number and prints the last digit of that number.
- * It also provides additional information about the last digit based on certain conditions.
+ *program generates a random number and prints the last digit of that number.
+ *provides additional information about the last digit based on certain conditions.
  */
 int main(void)
 {
@@ -24,5 +24,5 @@ int main(void)
 	{
 		printf("is less than 6 and not 0\n");
 	}
-       	return 0;
+	return (0);
 }
