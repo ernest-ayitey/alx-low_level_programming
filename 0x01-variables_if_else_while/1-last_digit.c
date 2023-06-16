@@ -14,7 +14,7 @@ int main(void)
 {
 	int n, lastDigit;
 	/* Generate a random number and assign it to variable n*/
-        srand(time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	lastDigit = n % 10;
@@ -23,7 +23,7 @@ int main(void)
 	if (lastDigit > 5)
 	{
 		printf("is greater than 5\n");
-        } else if (lastDigit == 0)
+	} else if (lastDigit == 0)
 	{
 		printf("is 0\n");
 	} else
