@@ -7,9 +7,8 @@
  * main - Entry point of the program
  *
  *This program generates a random number and prints the last digit
- * and certain conditional information
- * 
- * Return: Always 0 (indicating success)
+ *and certain conditional information
+ *Return: Always 0 (indicating success)
  */
 int main(void)
 {
