@@ -4,10 +4,11 @@
 #include <stdio.h>
 /* betty style doc for function main goes there*/
 /**
- *program generates a random number and prints the last digit of that number.
- *provides additional information about the last digit based on a conditions.
+ * This program generates a random number and prints the last digit.
+ * It provides additional information about the last digit based on certain conditions.
  *
- *  Return 0 indicating successful execution of the program.
+ * Returns:
+ *     0 - indicating successful execution of the program.
  */
 int main(void)
 {
@@ -15,6 +16,7 @@ int main(void)
 	/* Generate a random number and assign it to variable n*/
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
 	lastDigit = n % 10;
 	/* Print the result based on the last digit */
 	printf("Last digit of %d is %d and ", n, lastDigit);
