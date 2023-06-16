@@ -12,7 +12,7 @@ int main(void)
     lastDigit = n % 10;
 
     /* Print the result based on the last digit */
-    printf("Last digit of %d is %d ", n, lastDigit);
+    printf("Last digit of %d is %d and ", n, lastDigit);
     
     if (lastDigit > 5)
     {
