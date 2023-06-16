@@ -1,9 +1,12 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
+#include <stdio.h>
 /**
  *program generates a random number and prints the last digit of that number.
- *provides additional information about the last digit based on certain conditions.
+ *provides additional information about the last digit based on a conditions.
+ *
+ *  Return 0 indicating successful execution of the program.
  */
 int main(void)
 {
