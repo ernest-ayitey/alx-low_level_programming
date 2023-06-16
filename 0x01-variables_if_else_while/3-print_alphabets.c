@@ -20,7 +20,8 @@ int main(void)
 	{
 		putchar(uppercase);
 		uppercase++;
-	}/* Print new line*/
+	}
+	/* Print new line*/
 	putchar('\n');
 	return (0);
 }
