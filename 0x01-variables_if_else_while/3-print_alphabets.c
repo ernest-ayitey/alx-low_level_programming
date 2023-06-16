@@ -3,6 +3,8 @@
  * main - Entry point
  * thiis program prints both lowercase and uppercase letters.
  *
+ * Return: Alway 0 (indicating success)
+ *
  */
 int main(void)
 {
