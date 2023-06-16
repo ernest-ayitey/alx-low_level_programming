@@ -1,14 +1,6 @@
 #include <stdio.h>
 
-void printCombination(int a, int b, int c)
-{
-	putchar(a + '0');
-	putchar(b + '0');
-	putchar(c + '0');
-	putchar(',');
-	putchar(' ');
-}
-int main()
+int main(void)
 {
 	int i, j, k;
 
@@ -18,10 +10,17 @@ int main()
 		{
 			for (k = j + 1; k <= 9; k++)
 			{
-				printCombination(i, j, k);
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+
+				if (i != 7 || j != 8 || k != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
