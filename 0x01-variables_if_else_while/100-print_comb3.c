@@ -4,8 +4,9 @@
  *
  * This program prints all possible different combinations of two digits.
  *
- * Return: always 0 (indicaing success)
- */
+ * Return: Always 0(indicating Success)
+ *
+ */ 
 int main(void)
 {
 	int i, j;
@@ -16,7 +17,6 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
-
 			if (i != 8 || j != 9)
 			{
 				putchar(',');
