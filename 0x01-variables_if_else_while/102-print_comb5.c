@@ -14,20 +14,15 @@ int main(void)
 
 	for (i = 0; i <= 99; i++)
 	{
-		for (j = i + 1; j <= 99; j++)
+		for (j = i; j <= 99; j++)
 		{
-			int i_tens = i / 10;
-			int i_ones = i % 10;
-			int j_tens = j / 10;
-			int j_ones = j % 10;
-
-			putchar('0' + i_tens);
-			putchar('0' + i_ones);
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
 			putchar(' ');
-			putchar('0' + j_tens);
-			putchar('0' + j_ones);
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
 
-			if (i != 99 || j !=  98)
+			if (i != 99 || j != 99)
 			{
 				putchar(',');
 				putchar(' ');
