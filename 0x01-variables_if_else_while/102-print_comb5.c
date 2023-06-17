@@ -27,7 +27,7 @@ int main(void)
 			putchar('0' + j_tens);
 			putchar('0' + j_ones);
 
-			if (i != 99 || j !=  99)
+			if (i != 99 || j !=  98)
 			{
 				putchar(',');
 				putchar(' ');
