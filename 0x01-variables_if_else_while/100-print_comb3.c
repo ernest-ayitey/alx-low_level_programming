@@ -4,13 +4,13 @@
  *
  * This program prints all possible different combinations of two digits.
  *
- * Return: Always 0(indicating Success)
+ * Return: Always 0 (indicating Success)
  *
- */ 
+ */
+
 int main(void)
 {
 	int i, j;
-
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = i + 1; j <= 9; j++)
@@ -23,7 +23,7 @@ int main(void)
 				putchar(' ');
 			}
 		}
-	}putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
-
