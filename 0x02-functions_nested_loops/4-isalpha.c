@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isapha - checks alphabet character
+ * _isalpha - checks alphabet character
  * @c: the character to be hecked
  * Return: 1 if c is a letter, 0 otherwise
  */
