@@ -2,7 +2,7 @@
 /**
  * main - print _putchar
  * is written by _putchar
- * is wriiten by mbah
+ * is wriiten by ernest
  * Return: 0
  */
 int main(void)
