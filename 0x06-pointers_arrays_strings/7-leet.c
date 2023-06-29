@@ -10,29 +10,33 @@
  * Return: Always 0.
  */
 
-
 char *leet(char *str) {
-	char *encoded = (char *)malloc(sizeof(char) * strlen(str) + 1);
+	char *result = (char *)malloc(sizeof(char));
+
 	int i = 0;
+	int j = 0;
 
 	while (str[i] != '\0') {
-		char c = str[i];
-		if (c == 'a' || c == 'A')
-			encoded[i] = '4';
-		else if (c == 'e' || c == 'E')
-			encoded[i] = '3';
-		else if (c == 'o' || c == 'O')
-			encoded[i] = '0';
-		else if (c == 't' || c == 'T')
-			encoded[i] = '7';
-		else if (c == 'l' || c == 'L')
-			encoded[i] = '1';
-		else
-			encoded[i] = c;
+		if (str[i] == 'a' || str[i] == 'A') {
+			result[j] = '4';
+		} else if (str[i] == 'e' || str[i] == 'E') {
+			result[j] = '3';
+		} else if (str[i] == 'o' || str[i] == 'O') {
+			result[j] = '0';
+		} else if (str[i] == 't' || str[i] == 'T') {
+			result[j] = '7';
+		} else if (str[i] == 'l' || str[i] == 'L') {
+			result[j] = '1';
+		} else {
+			result[j] = str[i];
+		}
 
 		i++;
+		j++;
+		result = (char *)realloc(result, (j + 1) * sizeof(char));
 	}
 
-	encoded[i] = '\0';
-	return (encoded);
+	result[j] = '\0';
+	return result;
 }
+
