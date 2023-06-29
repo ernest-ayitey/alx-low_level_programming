@@ -9,30 +9,35 @@
  *
  * Return: Always 0.
  */
+#include <stdlib.h>
 
 char *leet(char *str) {
 	char *result = (char *)malloc(sizeof(char));
+
 	int i = 0;
 	int j = 0;
 
 	while (str[i] != '\0') {
 		if (str[i] == 'a' || str[i] == 'A') {
-			_putchar('4');
+			result[j] = '4';
 		} else if (str[i] == 'e' || str[i] == 'E') {
-			_putchar('3');
+			result[j] = '3';
 		} else if (str[i] == 'o' || str[i] == 'O') {
-			_putchar('0');
+			result[j] = '0';
 		} else if (str[i] == 't' || str[i] == 'T') {
-			_putchar('7');
+			result[j] = '7';
 		} else if (str[i] == 'l' || str[i] == 'L') {
-			_putchar('1');
+			result[j] = '1';
 		} else {
-			_putchar(str[i]);
+			result[j] = str[i];
 		}
 
 		i++;
+		j++;
+		result = (char *)realloc(result, (j + 1) * sizeof(char));
 	}
 
-	return result;
+	result[j] = '\0';
+	return (result);
 }
 
