@@ -1,40 +1,39 @@
-#include <stddef.h>  // for size_t
+#include "main.h"
+#include <stdio.h>
 
-char *_putchar(char c);
+/**
+ * cap_string - Capitalize all words of a string.
+ * @str: The string to be capitalized.
+ * Return: A pointer to the changed string.
+ *
+ */
 
-char *cap_string(char *str) {
-	// Array of word separators
-	char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\0'};
+char *cap_string(char *str)
+{
+	int j = 0;
 
-	int capitalize_next = 1;  // Flag to indicate if the next character should be capitalized
+	while (str[j])
+	{
+		while (!(str[j] >= 'a' && str[j] <= 'z'))
+			j++;
+		if (str[j - 1] == ' ' ||
+				str[j - 1] == ' ' ||
+				str[j - 1] == '\t' ||
+				str[j - 1] == '\n' ||
+				str[j - 1] == ',' ||
+				str[j - 1] == ';' ||
+				str[j - 1] == '.' ||
+				str[j - 1] == '!' ||
+				str[j - 1] == '?' ||
+				str[j - 1] == '"' ||
+				str[j - 1] == '(' ||
+				str[j - 1] == ')' ||
+				str[j - 1] == '{' ||
+				str[j - 1] == '}' ||
+				j == 0)
+			str[j] -= 32;
 
-	// Iterate through each character in the string
-	for (size_t i = 0; str[i] != '\0'; i++) {
-		// Check if the current character is a word separator
-		int is_separator = 0;
-		for (size_t j = 0; separators[j] != '\0'; j++) {
-			if (str[i] == separators[j]) {
-				is_separator = 1;
-				break;
-			}
-		}
-
-		// If the current character is a separator, set the flag to capitalize the next character
-		if (is_separator) {
-			capitalize_next = 1;
-		}
-		// If the current character is a letter and the flag is set, capitalize it
-		else if (capitalize_next && (str[i] >= 'a' && str[i] <= 'z')) {
-			_putchar(str[i] - 32);
-			capitalize_next = 0;
-		}
-		// Otherwise, just print the character as it is
-		else {
-			_putchar(str[i]);
-			capitalize_next = 0;
-		}
+		j++;
 	}
-
 	return (str);
 }
-
