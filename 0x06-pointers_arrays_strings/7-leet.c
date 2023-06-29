@@ -3,13 +3,12 @@
 
 /**
  * main - check the code for 
- *function that encodes a string into 1337
+ * function that encodes a string into 1337
  *
- *letters l and L should be replaced by 1
+ * letters l and L should be replaced by 1
  *
  * Return: Always 0.
  */
-#include <stdlib.h>
 
 char *leet(char *str) {
 	char *result = (char *)malloc(sizeof(char));
