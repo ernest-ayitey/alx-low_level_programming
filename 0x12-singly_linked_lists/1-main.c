@@ -2,8 +2,9 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+
 /**
- * main -is use to check the code
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -15,9 +16,7 @@ int main(void)
 	size_t n;
 
 	head = &hello;
-
 	new = malloc(sizeof(list_t));
-
 	if (new == NULL)
 	{
 		printf("Error\n");
@@ -27,14 +26,9 @@ int main(void)
 	new->len = 5;
 	new->next = head;
 	head = new;
-	n = print_list(head);
+	n = list_len(head);
 	printf("-> %lu elements\n", n);
-
-	printf("\n");
 	free(new->str);
-	new->str = NULL;
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
 	free(new);
 	return (0);
 }
