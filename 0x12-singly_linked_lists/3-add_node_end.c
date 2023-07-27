@@ -2,10 +2,9 @@
 #include <string.h>
 
 /**
- * add_node_end - Adds a new node at the end of a list_t list.
+ * add_node_end - at the end of a list_t list, adds a new node.
  * @head: A pointer the head of the list_t list.
- * @str: The string to be added to the list_t list.
- *
+ * @str: The string that will be included in the list_t list
  * Return: If the function fails - NULL.
  * Otherwise - the address of the new element.
  */
