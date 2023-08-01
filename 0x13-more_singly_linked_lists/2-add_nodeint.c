@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * nodeint - adds a new nodesat the beginning
+ * add_nodeint - adds a new nodesat the beginning
  * @head: pointer header
  * @n: int data type
  * Return: the new address
