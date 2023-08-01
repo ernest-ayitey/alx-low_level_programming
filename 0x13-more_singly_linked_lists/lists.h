@@ -6,8 +6,8 @@
 #include <stdlib.h>
 
 /**
- * struct_listint_s - singly linked list
- * @i: integer
+ * struct listint_s - singly linked list
+ * @n: integer
  * @next: singly linked list node structure
  * Description: singly linked list node structure
  *
