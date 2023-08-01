@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * get_nodeint_at_index - find  node in a list
- * @head: addressof the first node 
+ * @head: addressof the first node
  * @index: node find startinng from 0
  * Return: node address
  */
