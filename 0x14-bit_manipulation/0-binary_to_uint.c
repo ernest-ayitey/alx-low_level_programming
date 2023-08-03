@@ -1,11 +1,4 @@
 #include "main.h"
-/**
- * binaary_to_umit - converts a binary number to an 
- * unsigned int
- * @b: binary number
- * Return: the converted number, or 0 if invalid input
- */
-#include "main.h"
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int
